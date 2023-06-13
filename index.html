@@ -50,7 +50,7 @@
     
 
     <script>
-        var naam = prompt("Enter your Name..........)
+       
         function First(){
             document.getElementById("res").innerHTML = '<span style="color: darkred;">Think Any random Number which <br> can be easy for your calculation</span>'
 
@@ -99,9 +99,9 @@
             speechSynthesis.speak( new SpeechSynthesisUtterance("Now, You need to subtract the number whatever you think at first step"));
         }
         function Sixth(){
-            document.getElementById("res").innerHTML='<span style="color:darkgreen">' + naam.toUpperCase()  + 'You Got the Answer : ' + (number / 2) + '</span>'
+            document.getElementById("res").innerHTML='<span style="color:darkgreen">' + 'You Got the Answer : ' + (number / 2) + '</span>'
 
-            speechSynthesis.speak( new SpeechSynthesisUtterance( naam + "you Got the Answer : " + (number / 2) ));
+            speechSynthesis.speak( new SpeechSynthesisUtterance( "you Got the Answer : " + (number / 2) ));
 
             setTimeout(() => {
                 location.reload()
